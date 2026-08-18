@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Latar Belakang -->
+  <rect width="100%" height="100%" fill="#1a1a2e" rx="40"/>
+
+  <!-- Definisi Gradien -->
+  <defs>
+    <linearGradient id="gradBack" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f3460" />
+      <stop offset="100%" stop-color="#e94560" />
+    </linearGradient>
+    <linearGradient id="gradText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d2ff" />
+      <stop offset="100%" stop-color="#3a7bd5" />
+    </linearGradient>
+  </defs>
+
+  <!-- Elemen Dekoratif Belakang -->
+  <circle cx="200" cy="200" r="120" fill="url(#gradBack)" opacity="0.4" />
+
+  <!-- Teks Logo <R /> -->
+  <text x="75" y="240" font-family="monospace, sans-serif" font-weight="bold" font-size="110" fill="#ffffff">&lt;</text>
+  <text x="145" y="245" font-family="Arial, sans-serif" font-weight="900" font-size="150" fill="url(#gradText)">R</text>
+  <text x="250" y="240" font-family="monospace, sans-serif" font-weight="bold" font-size="110" fill="#ffffff">/&gt;</text>
+</svg>

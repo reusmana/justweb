@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>JUSTWEB | Web Development Studio</title>
 
+    <!-- Favicon / Header Icon -->
+    <link rel="icon" type="image/png" href="src/gemini-svg.svg"/>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -117,8 +120,9 @@
     <!-- NAVIGATION BAR -->
     <nav class="bg-white/90 backdrop-blur-xl fixed top-0 w-full z-40 border-b border-gray-200 transition-all duration-300">
         <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-stack-sm max-w-container-max mx-auto">
-            <a href="#" class="font-headline-md text-headline-md font-bold text-gray-900 tracking-tighter">
-                JUSTWEB
+            <a href="#" class="flex items-center gap-2.5 font-headline-md text-headline-md font-bold text-gray-900 tracking-tighter group">
+                <img src="src/gemini-svg.svg" alt="JUSTWEB Logo" class="w-8 h-8 rounded-md object-cover border border-gray-200 shadow-xs group-hover:scale-105 transition-transform"/>
+                <span>JUSTWEB</span>
             </a>
 
             <!-- Desktop Navigation -->
@@ -152,9 +156,12 @@
         <div>
             <!-- Sidebar Header -->
             <div class="flex justify-between items-center pb-6 border-b border-gray-100">
-                <span class="font-headline-md text-headline-md font-bold text-gray-900 tracking-tighter">
-                    JUSTWEB
-                </span>
+                <div class="flex items-center gap-2.5">
+                    <img src="src/reusmana-new.png" alt="JUSTWEB Logo" class="w-8 h-8 rounded-md object-cover border border-gray-200 shadow-xs"/>
+                    <span class="font-headline-md text-headline-md font-bold text-gray-900 tracking-tighter">
+                        JUSTWEB
+                    </span>
+                </div>
                 <button id="sidebar-close-btn" class="p-2 text-gray-500 hover:text-gray-900 rounded-full hover:bg-gray-100 transition-colors" aria-label="Tutup Sidebar">
                     <span class="material-symbols-outlined text-2xl">close</span>
                 </button>
@@ -414,116 +421,184 @@
 
         <!-- 5. TECHNICAL CAPABILITIES SECTION -->
         <section id="capabilities" class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-stack-xl border-t border-gray-200">
-            <div class="flex flex-col items-start gap-stack-sm mb-stack-lg">
-                <span class="font-label-sm text-label-sm uppercase tracking-widest text-blue-600">Technical Stack & Expertise</span>
-                <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-gray-900">Technical Capabilities</h2>
-                <p class="font-body-lg text-body-lg text-gray-600 max-w-2xl">
-                    We combine modern stacks with engineering best practices to deliver fast, secure, and maintainable software.
+    <div class="flex flex-col items-start gap-stack-sm mb-stack-lg">
+        <span class="font-label-sm text-label-sm uppercase tracking-widest text-blue-600">
+            Technical Stack & Expertise
+        </span>
+
+        <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-gray-900">
+            Technical Capabilities
+        </h2>
+
+        <p class="font-body-lg text-body-lg text-gray-600 max-w-2xl">
+            I combine modern technologies with practical engineering experience to build fast, secure, and maintainable software for real-world business needs.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+
+        <!-- Frontend -->
+        <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col justify-between hover:border-gray-900 transition-colors">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-blue-600 text-3xl">desktop_windows</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Frontend</h3>
+                </div>
+
+                <p class="text-gray-600 font-body-md text-body-md mb-6">
+                    Building responsive, performant, and maintainable interfaces with modern component-based frameworks and utility-first styling.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-                <!-- Frontend -->
-                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col justify-between hover:border-gray-900 transition-colors">
-                    <div>
-                        <div class="flex items-center gap-3 mb-4">
-                            <span class="material-symbols-outlined text-blue-600 text-3xl">desktop_windows</span>
-                            <h3 class="font-headline-md text-headline-md text-gray-900">Frontend</h3>
-                        </div>
-                        <p class="text-gray-600 font-body-md text-body-md mb-6">
-                            Building performant, accessible, and reactive user interfaces with modular component architecture and strict type safety.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">React</span>
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Vue</span>
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Next.js</span>
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Nuxt.js</span>
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">TypeScript</span>
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Tailwind CSS</span>
-                    </div>
-                </div>
-
-                <!-- Backend -->
-                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col justify-between hover:border-gray-900 transition-colors">
-                    <div>
-                        <div class="flex items-center gap-3 mb-4">
-                            <span class="material-symbols-outlined text-blue-600 text-3xl">dns</span>
-                            <h3 class="font-headline-md text-headline-md text-gray-900">Backend</h3>
-                        </div>
-                        <p class="text-gray-600 font-body-md text-body-md mb-6">
-                            Constructing resilient server-side logic, secure RESTful APIs, and efficient background worker services tailored to your core business goals.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Laravel</span>
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Golang</span>
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Python</span>
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Dart</span>
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Node.js</span>
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">REST API</span>
-                    </div>
-                </div>
-
-                <!-- Database -->
-                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col justify-between hover:border-gray-900 transition-colors">
-                    <div>
-                        <div class="flex items-center gap-3 mb-4">
-                            <span class="material-symbols-outlined text-blue-600 text-3xl">database</span>
-                            <h3 class="font-headline-md text-headline-md text-gray-900">Database</h3>
-                        </div>
-                        <p class="text-gray-600 font-body-md text-body-md mb-6">
-                            Architecting optimized relational data schemas, indexing strategy, and high-concurrency transactions ensuring zero data loss.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">MySQL</span>
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">PostgreSQL</span>
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Firebase</span>
-                    </div>
-                </div>
-
-                <!-- Infrastructure -->
-                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col justify-between hover:border-gray-900 transition-colors">
-                    <div>
-                        <div class="flex items-center gap-3 mb-4">
-                            <span class="material-symbols-outlined text-blue-600 text-3xl">cloud_queue</span>
-                            <h3 class="font-headline-md text-headline-md text-gray-900">Infrastructure</h3>
-                        </div>
-                        <p class="text-gray-600 font-body-md text-body-md mb-6">
-                            Deploying production-ready cloud environments, automated CI/CD pipelines, SSL encryption, and domain routing for continuous uptime.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Git</span>
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Deployment</span>
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Cloud</span>
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Domain & Hosting</span>
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">AWS</span>
-                    </div>
-                </div>
-
-                <!-- Engineering Practices -->
-                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col justify-between hover:border-gray-900 transition-colors lg:col-span-2">
-                    <div>
-                        <div class="flex items-center gap-3 mb-4">
-                            <span class="material-symbols-outlined text-blue-600 text-3xl">verified_user</span>
-                            <h3 class="font-headline-md text-headline-md text-gray-900">Engineering Standard</h3>
-                        </div>
-                        <p class="text-gray-600 font-body-md text-body-md mb-6">
-                            Implementing enterprise-grade security protocols, OAuth/JWT authentication, role-based access control, cross-device responsiveness, search engine optimization, and Lighthouse speed performance.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Authentication</span>
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Role Management</span>
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">API Integration</span>
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Responsive UI</span>
-                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">SEO Performance</span>
-                    </div>
-                </div>
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">React</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Vue</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Next.js</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Nuxt.js</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">TypeScript</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Tailwind CSS</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Vite</span>
             </div>
-        </section>
+        </div>
+
+        <!-- Backend -->
+        <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col justify-between hover:border-gray-900 transition-colors">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-blue-600 text-3xl">dns</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Backend</h3>
+                </div>
+
+                <p class="text-gray-600 font-body-md text-body-md mb-6">
+                    Developing reliable server-side applications, REST APIs, business logic, authentication, and background processes.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Laravel</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Node.js</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Golang</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Python</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">REST API</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Laravel Passport</span>
+            </div>
+        </div>
+
+        <!-- Database -->
+        <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col justify-between hover:border-gray-900 transition-colors">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-blue-600 text-3xl">database</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Database</h3>
+                </div>
+
+                <p class="text-gray-600 font-body-md text-body-md mb-6">
+                    Designing relational data structures, migrations, indexing strategies, and reliable database workflows for business applications.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">MySQL</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">PostgreSQL</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Firebase</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Database Design</span>
+            </div>
+        </div>
+
+        <!-- ERP & Odoo -->
+        <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col justify-between hover:border-gray-900 transition-colors">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-blue-600 text-3xl">account_tree</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">ERP & Odoo</h3>
+                </div>
+
+                <p class="text-gray-600 font-body-md text-body-md mb-6">
+                    Customizing Odoo and developing business modules, workflows, and integrations around specific operational requirements.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Odoo</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Custom Modules</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">ERP Customization</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Business Workflow</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Integration</span>
+            </div>
+        </div>
+
+        <!-- Mobile -->
+        <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col justify-between hover:border-gray-900 transition-colors">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-blue-600 text-3xl">smartphone</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Mobile Development</h3>
+                </div>
+
+                <p class="text-gray-600 font-body-md text-body-md mb-6">
+                    Building cross-platform mobile applications with responsive interfaces and API-driven architecture.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Flutter</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Dart</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Android</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">REST API</span>
+            </div>
+        </div>
+
+        <!-- Infrastructure & DevOps -->
+        <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col justify-between hover:border-gray-900 transition-colors">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-blue-600 text-3xl">deployed_code</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Infrastructure & DevOps</h3>
+                </div>
+
+                <p class="text-gray-600 font-body-md text-body-md mb-6">
+                    Deploying and maintaining production applications with containerization, cloud infrastructure, version control, and secure hosting.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Docker</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Nginx</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Git</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">AWS</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Firebase</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Vercel</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">CI/CD</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">SSL</span>
+            </div>
+        </div>
+
+        <!-- Security & API -->
+        <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col justify-between hover:border-gray-900 transition-colors lg:col-span-2">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-blue-600 text-3xl">security</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Security & API Integration</h3>
+                </div>
+
+                <p class="text-gray-600 font-body-md text-body-md mb-6">
+                    Implementing secure authentication, role-based access control, API integrations, permission scoping, and protected business workflows.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">OAuth</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">JWT</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">RBAC</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Authentication</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Authorization</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">API Integration</span>
+                <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Permission Scoping</span>
+            </div>
+        </div>
+
+    </div>
+</section>
 
         <!-- 6. HOW WE WORK SECTION -->
         <section id="process" class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-stack-xl border-t border-gray-200">
@@ -636,7 +711,10 @@
     <footer id="contact" class="bg-gray-50 w-full py-stack-xl border-t border-gray-200">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
             <div>
-                <div class="font-headline-md text-headline-md font-bold text-gray-900 mb-stack-md">JUSTWEB</div>
+                <div class="flex items-center gap-2.5 font-headline-md text-headline-md font-bold text-gray-900 mb-stack-md">
+                    <img src="src/gemini-svg.svg" alt="JUSTWEB Logo" class="w-8 h-8 rounded-md object-cover border border-gray-200 shadow-xs"/>
+                    <span>JUSTWEB</span>
+                </div>
                 <p class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600" id="currentyear">© 2024 JUSTWEB. ALL RIGHTS RESERVED. BUILD_VER: 2.0.4</p>
             </div>
             <div class="flex flex-col gap-stack-sm">
