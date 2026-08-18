@@ -1,0 +1,58 @@
+/* Custom CSS for STUDIO_BUILD */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    color: #111827;
+}
+
+.surface-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+}
+
+.btn-primary {
+    background-color: #111827;
+    color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1f2937;
+    opacity: 0.95;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid #e5e7eb;
+    color: #111827;
+    transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+    border-color: #111827;
+    background-color: #f9fafb;
+    transform: translateY(-1px);
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Sidebar Open Active Utility Classes */
+body.sidebar-open {
+    overflow: hidden;
+}
+
+#sidebar-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#mobile-sidebar.active {
+    transform: translateX(0);
+}

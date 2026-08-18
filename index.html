@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>JustWeb | Web Development Studio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#c8c6c7",
+              "secondary-container": "#454747",
+              "tertiary-fixed": "#dee0ff",
+              "on-surface": "#e0e2e8",
+              "on-primary-fixed-variant": "#474647",
+              "surface-container-high": "#272a2e",
+              "secondary-fixed": "#e2e2e2",
+              "on-tertiary": "#001f90",
+              "on-tertiary-fixed-variant": "#002fc8",
+              "error": "#ffb4ab",
+              "outline-variant": "#46464a",
+              "outline": "#919094",
+              "primary-container": "#0a0a0b",
+              "surface-container-highest": "#323539",
+              "inverse-on-surface": "#2d3135",
+              "surface-container-lowest": "#0b0f12",
+              "error-container": "#93000a",
+              "inverse-primary": "#5f5e5f",
+              "primary": "#c8c6c7",
+              "on-error-container": "#ffdad6",
+              "on-tertiary-fixed": "#00105b",
+              "on-primary": "#313031",
+              "primary-fixed-dim": "#c8c6c7",
+              "tertiary-fixed-dim": "#bac3ff",
+              "tertiary": "#bac3ff",
+              "on-tertiary-container": "#4e6aff",
+              "secondary": "#c6c6c7",
+              "inverse-surface": "#e0e2e8",
+              "secondary-fixed-dim": "#c6c6c7",
+              "on-secondary-fixed": "#1a1c1c",
+              "on-background": "#e0e2e8",
+              "on-secondary-fixed-variant": "#454747",
+              "surface-dim": "#101417",
+              "on-secondary": "#2f3131",
+              "on-primary-fixed": "#1c1b1c",
+              "surface-bright": "#36393e",
+              "surface-variant": "#323539",
+              "on-primary-container": "#7a797a",
+              "background": "#101417",
+              "on-secondary-container": "#b4b5b5",
+              "surface-container-low": "#181c20",
+              "surface-container": "#1c2024",
+              "on-surface-variant": "#c7c6ca",
+              "tertiary-container": "#00052f",
+              "on-error": "#690005",
+              "primary-fixed": "#e5e2e3",
+              "surface": "#101417"
+            },
+            borderRadius: {
+              "DEFAULT": "0.25rem",
+              "lg": "0.5rem",
+              "xl": "0.75rem",
+              "full": "9999px"
+            },
+            spacing: {
+              "stack-xl": "80px",
+              "stack-lg": "32px",
+              "stack-sm": "8px",
+              "margin-mobile": "20px",
+              "baseline": "4px",
+              "stack-md": "16px",
+              "container-max": "1440px",
+              "margin-desktop": "64px",
+              "gutter": "24px"
+            },
+            fontFamily: {
+              "headline-lg-mobile": ["Hanken Grotesk", "sans-serif"],
+              "body-lg": ["Inter", "sans-serif"],
+              "headline-md": ["Hanken Grotesk", "sans-serif"],
+              "display-lg": ["Hanken Grotesk", "sans-serif"],
+              "body-md": ["Inter", "sans-serif"],
+              "headline-lg": ["Hanken Grotesk", "sans-serif"],
+              "label-sm": ["JetBrains Mono", "monospace"]
+            },
+            fontSize: {
+              "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+              "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+              "headline-md": ["24px", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+              "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700" }],
+              "body-md": ["16px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+              "headline-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+              "label-sm": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500" }]
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="font-body-md text-body-md antialiased selection:bg-blue-100 selection:text-blue-900 bg-white text-gray-900">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="bg-white/90 backdrop-blur-xl fixed top-0 w-full z-40 border-b border-gray-200 transition-all duration-300">
+        <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-stack-sm max-w-container-max mx-auto">
+            <a href="#" class="font-headline-md text-headline-md font-bold text-gray-900 tracking-tighter">
+                JUSTWEB
+            </a>
+
+            <!-- Desktop Navigation -->
+            <ul class="hidden md:flex items-center space-x-gutter">
+                <li><a class="text-gray-600 hover:text-gray-900 transition-colors duration-200 font-medium" href="#work">Work</a></li>
+                <li><a class="text-gray-600 hover:text-gray-900 transition-colors duration-200 font-medium" href="#services">Services</a></li>
+                <li><a href="https://reusmana-portfolio.vercel.app/#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-200 font-medium" href="#process">Contact</a></li>
+                <li><a class="text-gray-600 hover:text-gray-900 transition-colors duration-200 font-medium" href="#capabilities">Capabilities</a></li>
+            </ul>
+
+            <div class="hidden md:block">
+                <a href="https://reusmana-portfolio.vercel.app/#contact" class="text-gray-900 hover:text-white hover:bg-gray-900 transition-all duration-200 font-label-sm text-label-sm uppercase tracking-widest border border-gray-900 px-6 py-3 rounded-DEFAULT" href="#contact">
+                    Start a Project
+                </a>
+            </div>
+
+            <!-- Hamburger Button for Mobile -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-900 hover:text-gray-600 focus:outline-none transition-colors" aria-label="Buka Menu Sidebar" aria-expanded="false" aria-controls="mobile-sidebar">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- RESPONSIVE SIDEBAR BACKDROP & DRAWER -->
+    <!-- Backdrop Overlay -->
+    <div id="sidebar-overlay" class="fixed inset-0 bg-black/60 backdrop-blur-xs z-50 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out"></div>
+
+    <!-- Sidebar Panel (Mobile Drawer) -->
+    <aside id="mobile-sidebar" class="fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-white z-50 shadow-2xl translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between p-6 overflow-y-auto" aria-hidden="true">
+        <div>
+            <!-- Sidebar Header -->
+            <div class="flex justify-between items-center pb-6 border-b border-gray-100">
+                <span class="font-headline-md text-headline-md font-bold text-gray-900 tracking-tighter">
+                    JUSTWEB
+                </span>
+                <button id="sidebar-close-btn" class="p-2 text-gray-500 hover:text-gray-900 rounded-full hover:bg-gray-100 transition-colors" aria-label="Tutup Sidebar">
+                    <span class="material-symbols-outlined text-2xl">close</span>
+                </button>
+            </div>
+
+            <!-- Sidebar Navigation Links -->
+            <nav class="mt-8">
+                <ul class="flex flex-col space-y-4">
+                    <li>
+                        <a class="sidebar-link block py-3 px-4 text-gray-800 hover:text-black hover:bg-gray-50 rounded-lg font-headline-md text-headline-md transition-colors" href="#work">
+                            Work
+                        </a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link block py-3 px-4 text-gray-800 hover:text-black hover:bg-gray-50 rounded-lg font-headline-md text-headline-md transition-colors" href="#services">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link block py-3 px-4 text-gray-800 hover:text-black hover:bg-gray-50 rounded-lg font-headline-md text-headline-md transition-colors" href="#process">
+                            Process
+                        </a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link block py-3 px-4 text-gray-800 hover:text-black hover:bg-gray-50 rounded-lg font-headline-md text-headline-md transition-colors" href="#capabilities">
+                            Capabilities
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Sidebar Footer Action & Socials -->
+        <div class="pt-8 border-t border-gray-100">
+            <a href="https://reusmana-portfolio.vercel.app/#contact" class="sidebar-link block w-full text-center btn-primary py-4 rounded-DEFAULT font-label-sm text-label-sm uppercase tracking-widest mb-6 shadow-sm">
+                Start a Project
+            </a>
+            <div class="flex justify-around text-gray-600 font-label-sm text-label-sm uppercase tracking-widest pt-2">
+                <!-- <a href="#" class="hover:text-gray-900 transition-colors">Twitter</a> -->
+                <a href="https://www.linkedin.com/in/reusmana-sujani-2b77ba237/" class="hover:text-gray-900 transition-colors">LinkedIn</a>
+                <a href="https://github.com/reusmana" class="hover:text-gray-900 transition-colors">GitHub</a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="pt-28 pb-stack-xl">
+        <!-- HERO SECTION -->
+        <section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto pt-stack-lg md:pt-stack-xl pb-stack-xl">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+                <div class="md:col-span-8 flex flex-col items-start gap-stack-lg">
+                    <div class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600 border border-gray-200 rounded-full px-4 py-2">
+                        Web Development • UI Implementation • Custom Web Applications
+                    </div>
+                    <h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-display-lg md:text-display-lg text-gray-900 leading-tight">
+                        Websites and Digital Products, Built to Perform.
+                    </h1>
+                    <p class="font-body-lg text-body-lg text-gray-600 max-w-2xl">
+                        We design and develop modern websites and custom web applications that help businesses launch, operate, and grow.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-stack-md pt-stack-sm w-full sm:w-auto">
+                        <a href="https://reusmana-portfolio.vercel.app/#contact" class="btn-primary px-8 py-4 rounded-DEFAULT font-label-sm text-label-sm uppercase tracking-widest text-center">Start a Project</a>
+                        <a href="#work" class="btn-secondary px-8 py-4 rounded-DEFAULT font-label-sm text-label-sm uppercase tracking-widest text-center">View Our Work</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Images -->
+            <div class="mt-stack-xl grid grid-cols-1 md:grid-cols-2 gap-gutter">
+                <div class="surface-card rounded-lg overflow-hidden aspect-[1.5] shadow-sm">
+                    <img class="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-500" 
+                         alt="Sophisticated corporate website mockup" 
+                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGLX-iezFS8ETSQO0vKobQhjyDeGE4YZdFrdO1voasm6EZsjBsSTZR-w3jk9frGQ3tkJn4TSvxWe3aF3cKn3QQGrLe4OZ2NRyz_25iFjcGMEOqfnbtaP9K8lojCGV8GLBTp5ni7t6jPbFqo1tVYRJvYrkhKg6z1zk_iwUpIT8Pb7caBuST1mGOs6JtNkO0eIEEFdS4DjIeH7SxGZU4n8Ag8MIvtNt-nF9Bz-ZXdxtH4EhvWQdLsRkV"/>
+                </div>
+                <div class="surface-card rounded-lg overflow-hidden aspect-[1.5] mt-0 md:mt-12 shadow-sm">
+                    <img class="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-500" 
+                         alt="Business management dashboard interface" 
+                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnijdvWU9QxxmBq9lcPwvU2DN9MorifJQoaruVFiRCIzZGTPuQ_B6amGmVkHFd2iUnyi_Gbh07MfAP7_PCwJA8RSxsHNE1AJ0y6IoZiTxcL5ThF5nXyGnKFpGw191z3D_FGszbFqr6urbl2eddWdYd_9xKpMXWAShGDVop3U2kVA7j8v2YVxWuRt_3tLbNLv4Dfd_OiMZHIrxagTwEcBCtkwk0eIHavPjvUECBzHjNGTwlhqYHO0mZ"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-stack-xl border-t border-gray-200">
+            <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg mb-stack-lg text-gray-900">What We Build</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col gap-stack-md hover:border-gray-900 transition-colors">
+                    <span class="material-symbols-outlined text-blue-600 text-4xl">web</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Landing Pages</h3>
+                    <p class="text-gray-600 font-body-md text-body-md">High-conversion, performant single-page entries tailored for campaigns.</p>
+                </div>
+                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col gap-stack-md hover:border-gray-900 transition-colors">
+                    <span class="material-symbols-outlined text-blue-600 text-4xl">domain</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Company Websites</h3>
+                    <p class="text-gray-600 font-body-md text-body-md">Comprehensive corporate presences built on robust CMS platforms.</p>
+                </div>
+                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col gap-stack-md hover:border-gray-900 transition-colors">
+                    <span class="material-symbols-outlined text-blue-600 text-4xl">shopping_cart</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">E-Commerce</h3>
+                    <p class="text-gray-600 font-body-md text-body-md">Scalable online storefronts optimized for transaction throughput.</p>
+                </div>
+                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col gap-stack-md hover:border-gray-900 transition-colors">
+                    <span class="material-symbols-outlined text-blue-600 text-4xl">code_blocks</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Custom Web Apps</h3>
+                    <p class="text-gray-600 font-body-md text-body-md">Bespoke software solutions addressing unique operational logic.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO SECTION -->
+        <section id="work" class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-stack-xl border-t border-gray-200">
+            <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg mb-stack-lg text-gray-900">Selected Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+                <!-- Project 1 -->
+                <div class="group cursor-pointer">
+                    <div class="surface-card overflow-hidden aspect-[1.79] mb-stack-md relative rounded-lg">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                             alt="E-commerce platform" 
+                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWR8oR6spKPcIWxTAl80pmB68d-2vyRtD9Vrifon5o59mHHrFANVx5gblZrvunD236DSdQ6-q0D6Ixx7545-7b9it0TkY7wxpNRL_yWoo1tnw1lSiVlTpIKyFCUvMyLukLOA1D3sHQFmIiTWp9I-INQftbwObasXwP9u0u00YvOJL37h9PR4u9iL59k-2IUogvnGlK4ydg9hTES5r8vPE4J0hlk1SmUNkTlY0k9eafI1tBJTCW4CkU"/>
+                        <div class="absolute top-4 right-4 font-label-sm text-label-sm text-gray-500 bg-white/80 backdrop-blur-xs px-2 py-1 rounded">P01</div>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="font-label-sm text-label-sm text-blue-600 uppercase tracking-widest mb-1">E-Commerce</p>
+                            <h3 class="font-headline-md text-headline-md text-gray-900">Global Retail Platform</h3>
+                        </div>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-600 px-2.5 py-1 rounded">Next.js</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group cursor-pointer">
+                    <div class="surface-card overflow-hidden aspect-[1.79] mb-stack-md relative rounded-lg">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                             alt="Enterprise Analytics Dashboard" 
+                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnijdvWU9QxxmBq9lcPwvU2DN9MorifJQoaruVFiRCIzZGTPuQ_B6amGmVkHFd2iUnyi_Gbh07MfAP7_PCwJA8RSxsHNE1AJ0y6IoZiTxcL5ThF5nXyGnKFpGw191z3D_FGszbFqr6urbl2eddWdYd_9xKpMXWAShGDVop3U2kVA7j8v2YVxWuRt_3tLbNLv4Dfd_OiMZHIrxagTwEcBCtkwk0eIHavPjvUECBzHjNGTwlhqYHO0mZ"/>
+                        <div class="absolute top-4 right-4 font-label-sm text-label-sm text-gray-500 bg-white/80 backdrop-blur-xs px-2 py-1 rounded">P02</div>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="font-label-sm text-label-sm text-blue-600 uppercase tracking-widest mb-1">Dashboard</p>
+                            <h3 class="font-headline-md text-headline-md text-gray-900">Enterprise Analytics</h3>
+                        </div>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-600 px-2.5 py-1 rounded">React</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group cursor-pointer">
+                    <div class="surface-card overflow-hidden aspect-[1.79] mb-stack-md relative rounded-lg">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                             alt="Booking System" 
+                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV1mwbgP3TYjdJaDHZpiF9NFz2dIAaCZs2Jw3QAOEYYh_IAPnM5_jEanHWm95j5_82oJHahF0XidN4Ss91mZcu52KMwSgrJTZyAAlpxQcRVDhLx-IFZSRcR6eJichxQlz3J_cy-oyo-L_6ikMhVswcu7kEks94YUyMn4V9E769Z1Noxilq9RaM1T3meiWmldORjBl55ZH3OUVdwXODG1LlzJhXaph5zlU6VkbvWx5AeQYdWrkZzrnI"/>
+                        <div class="absolute top-4 right-4 font-label-sm text-label-sm text-gray-500 bg-white/80 backdrop-blur-xs px-2 py-1 rounded">P03</div>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="font-label-sm text-label-sm text-blue-600 uppercase tracking-widest mb-1">Booking System</p>
+                            <h3 class="font-headline-md text-headline-md text-gray-900">Luxury Villa Retreats</h3>
+                        </div>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-600 px-2.5 py-1 rounded">Vue.js</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="group cursor-pointer">
+                    <div class="surface-card overflow-hidden aspect-[1.79] mb-stack-md relative rounded-lg">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                             alt="Culinary Experience Hub" 
+                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwdCZ_qgBnjyvZZeXiosmta41NYsdNQdHJOXfilCG1YJFoTR53f31sHjX3Ch3EyavTwBXBZLF5bS8qM8rJPjmYGlEOCJnxONSbQempoSvSbJfbLv7jGnYqxYeZniXp5NZFnIjPJboW5w7a4blTJWPD3obuCwsX4GT_PXDDFWFyaHIctWTF3G48gptE3fOSajO1E4E1cFRvcCzBqea0Ag_0hT0lg-bi1igP9XS5UNGwliJ8qWTKbQEz"/>
+                        <div class="absolute top-4 right-4 font-label-sm text-label-sm text-gray-500 bg-white/80 backdrop-blur-xs px-2 py-1 rounded">P04</div>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="font-label-sm text-label-sm text-blue-600 uppercase tracking-widest mb-1">Digital Platform</p>
+                            <h3 class="font-headline-md text-headline-md text-gray-900">Culinary Experience Hub</h3>
+                        </div>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-600 px-2.5 py-1 rounded">Laravel</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="bg-gray-50 w-full py-stack-xl border-t border-gray-200">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div>
+                <div class="font-headline-md text-headline-md font-bold text-gray-900 mb-stack-md">JUSTWEB</div>
+                <p class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600" id="currentyear">© 2024 JUSTWEB. ALL RIGHTS RESERVED. BUILD_VER: 2.0.4</p>
+            </div>
+            <div class="flex flex-col gap-stack-sm">
+                <!-- <a class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600 hover:text-gray-900 transition-all w-fit" href="#">Twitter</a> -->
+                <a href="https://www.linkedin.com/in/reusmana-sujani-2b77ba237/" class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600 hover:text-gray-900 transition-all w-fit" href="#">LinkedIn</a>
+                <a href="https://github.com/reusmana" class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600 hover:text-gray-900 transition-all w-fit" href="#">Github</a>
+            </div>
+            <div class="flex flex-col gap-stack-sm">
+                <a href="https://reusmana-portfolio.vercel.app/#contact" class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600 hover:text-gray-900 transition-all w-fit" href="#">Contact</a>
+                <a class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600 hover:text-gray-900 transition-all w-fit" href="#">Privacy</a>
+                <a class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600 hover:text-gray-900 transition-all w-fit" href="#">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
