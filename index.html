@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>JustWeb | Web Development Studio</title>
+    <title>JUSTWEB | Web Development Studio</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -125,12 +125,13 @@
             <ul class="hidden md:flex items-center space-x-gutter">
                 <li><a class="text-gray-600 hover:text-gray-900 transition-colors duration-200 font-medium" href="#work">Work</a></li>
                 <li><a class="text-gray-600 hover:text-gray-900 transition-colors duration-200 font-medium" href="#services">Services</a></li>
-                <li><a href="https://reusmana-portfolio.vercel.app/#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-200 font-medium" href="#process">Contact</a></li>
                 <li><a class="text-gray-600 hover:text-gray-900 transition-colors duration-200 font-medium" href="#capabilities">Capabilities</a></li>
+                <li><a class="text-gray-600 hover:text-gray-900 transition-colors duration-200 font-medium" href="#process">Process</a></li>
+                <li><a class="text-gray-600 hover:text-gray-900 transition-colors duration-200 font-medium" href="#why-us">Why Us</a></li>
             </ul>
 
             <div class="hidden md:block">
-                <a href="https://reusmana-portfolio.vercel.app/#contact" class="text-gray-900 hover:text-white hover:bg-gray-900 transition-all duration-200 font-label-sm text-label-sm uppercase tracking-widest border border-gray-900 px-6 py-3 rounded-DEFAULT" href="#contact">
+                <a href="https://reusmana-portfolio.vercel.app/#contact" class="text-gray-900 hover:text-white hover:bg-gray-900 transition-all duration-200 font-label-sm text-label-sm uppercase tracking-widest border border-gray-900 px-6 py-3 rounded-DEFAULT">
                     Start a Project
                 </a>
             </div>
@@ -173,13 +174,18 @@
                         </a>
                     </li>
                     <li>
+                        <a class="sidebar-link block py-3 px-4 text-gray-800 hover:text-black hover:bg-gray-50 rounded-lg font-headline-md text-headline-md transition-colors" href="#capabilities">
+                            Capabilities
+                        </a>
+                    </li>
+                    <li>
                         <a class="sidebar-link block py-3 px-4 text-gray-800 hover:text-black hover:bg-gray-50 rounded-lg font-headline-md text-headline-md transition-colors" href="#process">
                             Process
                         </a>
                     </li>
                     <li>
-                        <a class="sidebar-link block py-3 px-4 text-gray-800 hover:text-black hover:bg-gray-50 rounded-lg font-headline-md text-headline-md transition-colors" href="#capabilities">
-                            Capabilities
+                        <a class="sidebar-link block py-3 px-4 text-gray-800 hover:text-black hover:bg-gray-50 rounded-lg font-headline-md text-headline-md transition-colors" href="#why-us">
+                            Why Us
                         </a>
                     </li>
                 </ul>
@@ -192,16 +198,15 @@
                 Start a Project
             </a>
             <div class="flex justify-around text-gray-600 font-label-sm text-label-sm uppercase tracking-widest pt-2">
-                <!-- <a href="#" class="hover:text-gray-900 transition-colors">Twitter</a> -->
-                <a href="https://www.linkedin.com/in/reusmana-sujani-2b77ba237/" class="hover:text-gray-900 transition-colors">LinkedIn</a>
-                <a href="https://github.com/reusmana" class="hover:text-gray-900 transition-colors">GitHub</a>
+                <a href="https://www.linkedin.com/in/reusmana-sujani-2b77ba237/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-900 transition-colors">LinkedIn</a>
+                <a href="https://github.com/reusmana" target="_blank" rel="noopener noreferrer" class="hover:text-gray-900 transition-colors">GitHub</a>
             </div>
         </div>
     </aside>
 
     <!-- MAIN CONTENT -->
     <main class="pt-28 pb-stack-xl">
-        <!-- HERO SECTION -->
+        <!-- 1. HERO SECTION -->
         <section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto pt-stack-lg md:pt-stack-xl pb-stack-xl">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
                 <div class="md:col-span-8 flex flex-col items-start gap-stack-lg">
@@ -236,34 +241,70 @@
             </div>
         </section>
 
-        <!-- SERVICES SECTION -->
-        <section id="services" class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-stack-xl border-t border-gray-200">
-            <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg mb-stack-lg text-gray-900">What We Build</h2>
+        <!-- 2. SERVICES SECTION -->
+       <section id="services" class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-stack-xl border-t border-gray-200">
+                <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg mb-stack-lg text-gray-900">What We Build</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+
                 <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col gap-stack-md hover:border-gray-900 transition-colors">
                     <span class="material-symbols-outlined text-blue-600 text-4xl">web</span>
-                    <h3 class="font-headline-md text-headline-md text-gray-900">Landing Pages</h3>
-                    <p class="text-gray-600 font-body-md text-body-md">High-conversion, performant single-page entries tailored for campaigns.</p>
-                </div>
-                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col gap-stack-md hover:border-gray-900 transition-colors">
-                    <span class="material-symbols-outlined text-blue-600 text-4xl">domain</span>
                     <h3 class="font-headline-md text-headline-md text-gray-900">Company Websites</h3>
-                    <p class="text-gray-600 font-body-md text-body-md">Comprehensive corporate presences built on robust CMS platforms.</p>
+                    <p class="text-gray-600 font-body-md text-body-md">
+                        Professional, responsive websites built to showcase your brand, services, and business.
+                    </p>
                 </div>
+
                 <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col gap-stack-md hover:border-gray-900 transition-colors">
-                    <span class="material-symbols-outlined text-blue-600 text-4xl">shopping_cart</span>
-                    <h3 class="font-headline-md text-headline-md text-gray-900">E-Commerce</h3>
-                    <p class="text-gray-600 font-body-md text-body-md">Scalable online storefronts optimized for transaction throughput.</p>
+                    <span class="material-symbols-outlined text-blue-600 text-4xl">business_center</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Custom Business Systems</h3>
+                    <p class="text-gray-600 font-body-md text-body-md">
+                        Custom web applications that automate business processes, workflows, approvals, and daily operations.
+                    </p>
                 </div>
+
                 <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col gap-stack-md hover:border-gray-900 transition-colors">
-                    <span class="material-symbols-outlined text-blue-600 text-4xl">code_blocks</span>
-                    <h3 class="font-headline-md text-headline-md text-gray-900">Custom Web Apps</h3>
-                    <p class="text-gray-600 font-body-md text-body-md">Bespoke software solutions addressing unique operational logic.</p>
+                    <span class="material-symbols-outlined text-blue-600 text-4xl">account_tree</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Custom Odoo</h3>
+                    <p class="text-gray-600 font-body-md text-body-md">
+                        Odoo customization, module development, business workflows, and integrations tailored to your operations.
+                    </p>
+                </div>
+
+                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col gap-stack-md hover:border-gray-900 transition-colors">
+                    <span class="material-symbols-outlined text-blue-600 text-4xl">badge</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">HR & Payroll Systems</h3>
+                    <p class="text-gray-600 font-body-md text-body-md">
+                        HRIS solutions covering employees, attendance, shifts, leave, payroll, tax, and approval workflows.
+                    </p>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <section id="trust" class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-stack-xl border-t border-gray-200">
+            <div class="surface-card rounded-lg p-stack-lg md:p-stack-xl bg-gray-50/50">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter text-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
+                    <div class="py-6 md:py-0 md:px-6">
+                        <div class="font-display-lg text-5xl md:text-6xl font-bold text-gray-900 tracking-tight mb-2">26+</div>
+                        <p class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600">Projects Delivered</p>
+                    </div>
+                    <div class="py-6 md:py-0 md:px-6">
+                        <div class="font-display-lg text-5xl md:text-6xl font-bold text-gray-900 tracking-tight mb-2">8+</div>
+                        <p class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600">Happy Clients</p>
+                    </div>
+                    <div class="py-6 md:py-0 md:px-6">
+                        <div class="font-display-lg text-5xl md:text-6xl font-bold text-gray-900 tracking-tight mb-2">4+</div>
+                        <p class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600">Years Experience</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- PORTFOLIO SECTION -->
+        <!-- 3. PORTFOLIO SECTION -->
         <section id="work" class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-stack-xl border-t border-gray-200">
             <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg mb-stack-lg text-gray-900">Selected Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
@@ -336,6 +377,225 @@
                 </div>
             </div>
         </section>
+
+        <!-- 5. TECHNICAL CAPABILITIES SECTION -->
+        <section id="capabilities" class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-stack-xl border-t border-gray-200">
+            <div class="flex flex-col items-start gap-stack-sm mb-stack-lg">
+                <span class="font-label-sm text-label-sm uppercase tracking-widest text-blue-600">Technical Stack & Expertise</span>
+                <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-gray-900">Technical Capabilities</h2>
+                <p class="font-body-lg text-body-lg text-gray-600 max-w-2xl">
+                    We combine modern stacks with engineering best practices to deliver fast, secure, and maintainable software.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+                <!-- Frontend -->
+                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col justify-between hover:border-gray-900 transition-colors">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="material-symbols-outlined text-blue-600 text-3xl">desktop_windows</span>
+                            <h3 class="font-headline-md text-headline-md text-gray-900">Frontend</h3>
+                        </div>
+                        <p class="text-gray-600 font-body-md text-body-md mb-6">
+                            Building performant, accessible, and reactive user interfaces with modular component architecture and strict type safety.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">React</span>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Vue</span>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Next.js</span>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Nuxt.js</span>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">TypeScript</span>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col justify-between hover:border-gray-900 transition-colors">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="material-symbols-outlined text-blue-600 text-3xl">dns</span>
+                            <h3 class="font-headline-md text-headline-md text-gray-900">Backend</h3>
+                        </div>
+                        <p class="text-gray-600 font-body-md text-body-md mb-6">
+                            Constructing resilient server-side logic, secure RESTful APIs, and efficient background worker services tailored to your core business goals.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Laravel</span>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Golang</span>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Python</span>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Dart</span>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Node.js</span>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">REST API</span>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col justify-between hover:border-gray-900 transition-colors">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="material-symbols-outlined text-blue-600 text-3xl">database</span>
+                            <h3 class="font-headline-md text-headline-md text-gray-900">Database</h3>
+                        </div>
+                        <p class="text-gray-600 font-body-md text-body-md mb-6">
+                            Architecting optimized relational data schemas, indexing strategy, and high-concurrency transactions ensuring zero data loss.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">MySQL</span>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">PostgreSQL</span>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Firebase</span>
+                    </div>
+                </div>
+
+                <!-- Infrastructure -->
+                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col justify-between hover:border-gray-900 transition-colors">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="material-symbols-outlined text-blue-600 text-3xl">cloud_queue</span>
+                            <h3 class="font-headline-md text-headline-md text-gray-900">Infrastructure</h3>
+                        </div>
+                        <p class="text-gray-600 font-body-md text-body-md mb-6">
+                            Deploying production-ready cloud environments, automated CI/CD pipelines, SSL encryption, and domain routing for continuous uptime.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Git</span>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Deployment</span>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Cloud</span>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Domain & Hosting</span>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">AWS</span>
+                    </div>
+                </div>
+
+                <!-- Engineering Practices -->
+                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col justify-between hover:border-gray-900 transition-colors lg:col-span-2">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="material-symbols-outlined text-blue-600 text-3xl">verified_user</span>
+                            <h3 class="font-headline-md text-headline-md text-gray-900">Engineering Standard</h3>
+                        </div>
+                        <p class="text-gray-600 font-body-md text-body-md mb-6">
+                            Implementing enterprise-grade security protocols, OAuth/JWT authentication, role-based access control, cross-device responsiveness, search engine optimization, and Lighthouse speed performance.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Authentication</span>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Role Management</span>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">API Integration</span>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">Responsive UI</span>
+                        <span class="font-label-sm text-label-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">SEO Performance</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. HOW WE WORK SECTION -->
+        <section id="process" class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-stack-xl border-t border-gray-200">
+            <div class="flex flex-col items-start gap-stack-sm mb-stack-lg">
+                <span class="font-label-sm text-label-sm uppercase tracking-widest text-blue-600">Structured Workflow</span>
+                <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-gray-900">How We Work</h2>
+                <p class="font-body-lg text-body-lg text-gray-600 max-w-2xl">
+                    A clear, battle-tested 6-step process designed to keep projects on schedule, within scope, and aligned with your goals.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+                <!-- Step 01 -->
+                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col gap-stack-md hover:border-gray-900 transition-colors">
+                    <span class="font-label-sm text-2xl font-bold text-blue-600 tracking-wider">01</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Discover</h3>
+                    <p class="text-gray-600 font-body-md text-body-md">Understand your business objectives, target users, and functional requirements.</p>
+                </div>
+
+                <!-- Step 02 -->
+                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col gap-stack-md hover:border-gray-900 transition-colors">
+                    <span class="font-label-sm text-2xl font-bold text-blue-600 tracking-wider">02</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Plan</h3>
+                    <p class="text-gray-600 font-body-md text-body-md">Define project scope, detailed features, technical architecture, and milestones.</p>
+                </div>
+
+                <!-- Step 03 -->
+                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col gap-stack-md hover:border-gray-900 transition-colors">
+                    <span class="font-label-sm text-2xl font-bold text-blue-600 tracking-wider">03</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Design</h3>
+                    <p class="text-gray-600 font-body-md text-body-md">Create intuitive user interfaces, visual design systems, and responsive wireframes.</p>
+                </div>
+
+                <!-- Step 04 -->
+                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col gap-stack-md hover:border-gray-900 transition-colors">
+                    <span class="font-label-sm text-2xl font-bold text-blue-600 tracking-wider">04</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Build</h3>
+                    <p class="text-gray-600 font-body-md text-body-md">Develop the website or web application using clean, maintainable, and modern code.</p>
+                </div>
+
+                <!-- Step 05 -->
+                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col gap-stack-md hover:border-gray-900 transition-colors">
+                    <span class="font-label-sm text-2xl font-bold text-blue-600 tracking-wider">05</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Test</h3>
+                    <p class="text-gray-600 font-body-md text-body-md">Conduct thorough quality assurance, speed optimization, and cross-device testing.</p>
+                </div>
+
+                <!-- Step 06 -->
+                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col gap-stack-md hover:border-gray-900 transition-colors">
+                    <span class="font-label-sm text-2xl font-bold text-blue-600 tracking-wider">06</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Launch</h3>
+                    <p class="text-gray-600 font-body-md text-body-md">Deploy to cloud servers, provide full project handover, and deliver ongoing support.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. WHY WORK WITH US SECTION -->
+        <section id="why-us" class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-stack-xl border-t border-gray-200">
+            <div class="flex flex-col items-start gap-stack-sm mb-stack-lg">
+                <span class="font-label-sm text-label-sm uppercase tracking-widest text-blue-600">The Studio Difference</span>
+                <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-gray-900">Why Work With Us</h2>
+                <p class="font-body-lg text-body-lg text-gray-600 max-w-2xl">
+                    We don't sell hype or generic templates. We build custom engineering solutions designed around your growth.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+                <!-- Value 1 -->
+                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col gap-stack-md hover:border-gray-900 transition-colors">
+                    <span class="material-symbols-outlined text-blue-600 text-3xl">psychology</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Built Around Your Business</h3>
+                    <p class="text-gray-600 font-body-md text-body-md">Every single project is tailored specifically to solve your actual business challenges and workflow requirements.</p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col gap-stack-md hover:border-gray-900 transition-colors">
+                    <span class="material-symbols-outlined text-blue-600 text-3xl">devices</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Modern & Responsive</h3>
+                    <p class="text-gray-600 font-body-md text-body-md">Fluidly designed and tested across desktop, tablet, and mobile displays for consistent user experience everywhere.</p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col gap-stack-md hover:border-gray-900 transition-colors">
+                    <span class="material-symbols-outlined text-blue-600 text-3xl">dashboard_customize</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Custom Development</h3>
+                    <p class="text-gray-600 font-body-md text-body-md">Bespoke code tailored to your exact specifications. Not everything needs to fit inside a rigid pre-made template.</p>
+                </div>
+
+                <!-- Value 4 -->
+                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col gap-stack-md hover:border-gray-900 transition-colors">
+                    <span class="material-symbols-outlined text-blue-600 text-3xl">trending_up</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Scalable Architecture</h3>
+                    <p class="text-gray-600 font-body-md text-body-md">Engineered from day one with clean structure and modularity to handle future business growth and new feature integrations.</p>
+                </div>
+
+                <!-- Value 5 -->
+                <div class="surface-card p-stack-lg rounded-DEFAULT flex flex-col gap-stack-md hover:border-gray-900 transition-colors md:col-span-2 lg:col-span-2">
+                    <span class="material-symbols-outlined text-blue-600 text-3xl">support_agent</span>
+                    <h3 class="font-headline-md text-headline-md text-gray-900">Long-Term Support</h3>
+                    <p class="text-gray-600 font-body-md text-body-md">We build lasting partnerships. We continue improving, securing, and maintaining your web applications long after initial deployment.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. NUMBERS / TRUST SECTION -->
+        
     </main>
 
     <!-- FOOTER -->
@@ -346,12 +606,11 @@
                 <p class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600" id="currentyear">© 2024 JUSTWEB. ALL RIGHTS RESERVED. BUILD_VER: 2.0.4</p>
             </div>
             <div class="flex flex-col gap-stack-sm">
-                <!-- <a class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600 hover:text-gray-900 transition-all w-fit" href="#">Twitter</a> -->
-                <a href="https://www.linkedin.com/in/reusmana-sujani-2b77ba237/" class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600 hover:text-gray-900 transition-all w-fit" href="#">LinkedIn</a>
-                <a href="https://github.com/reusmana" class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600 hover:text-gray-900 transition-all w-fit" href="#">Github</a>
+                <a href="https://www.linkedin.com/in/reusmana-sujani-2b77ba237/" target="_blank" rel="noopener noreferrer" class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600 hover:text-gray-900 transition-all w-fit">LinkedIn</a>
+                <a href="https://github.com/reusmana" target="_blank" rel="noopener noreferrer" class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600 hover:text-gray-900 transition-all w-fit">Github</a>
             </div>
             <div class="flex flex-col gap-stack-sm">
-                <a href="https://reusmana-portfolio.vercel.app/#contact" class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600 hover:text-gray-900 transition-all w-fit" href="#">Contact</a>
+                <a href="https://reusmana-portfolio.vercel.app/#contact" target="_blank" rel="noopener noreferrer" class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600 hover:text-gray-900 transition-all w-fit">Contact</a>
                 <a class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600 hover:text-gray-900 transition-all w-fit" href="#">Privacy</a>
                 <a class="font-label-sm text-label-sm uppercase tracking-widest text-gray-600 hover:text-gray-900 transition-all w-fit" href="#">Terms</a>
             </div>
